@@ -1,0 +1,26 @@
+{
+  "name": "couchbackupfn",
+  "version": "1.0.0",
+  "description": "Couch Backup Function",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ongkhaiwei/couchbackupfn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ongkhaiwei/couchbackupfn/issues"
+  },
+  "homepage": "https://github.com/ongkhaiwei/couchbackupfn#readme",
+  "dependencies": {
+    "@cloudant/couchbackup": "^2.5.2",
+    "ibm-cos-sdk": "^1.6.1",
+    "moment": "^2.24.0",
+    "stream": "0.0.2"
+  }
+}

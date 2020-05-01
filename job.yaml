@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: cloudantbackup
+spec:
+  template:
+    spec:
+      volumes:
+      - name: config
+        configMap:
+          name: configmap
+      containers:
+      - name: cloudantbackup
+        image: cloudantbackup:1
+        volumeMounts:
+        - name: config
+          mountPath: /tmp_config
+      restartPolicy: Never
+  backoffLimit: 1
