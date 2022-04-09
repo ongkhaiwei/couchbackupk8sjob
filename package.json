@@ -20,7 +20,7 @@
   "dependencies": {
     "@cloudant/couchbackup": "^2.5.2",
     "ibm-cos-sdk": "^1.6.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "stream": "0.0.2"
   }
 }
